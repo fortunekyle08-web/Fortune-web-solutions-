@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fortune Web Solutions | Websites that bring in enquiries</title>
+<meta name="description" content="Websites and instant lead replies for South African service businesses. Get more enquiries and never leave a customer waiting.">
+<meta name="theme-color" content="#393F4B">
+<!-- Link previews on WhatsApp and Facebook. Replace the URL and add a 1200x630 image called preview.jpg -->
+<meta property="og:title" content="Fortune Web Solutions">
+<meta property="og:description" content="Websites that bring in enquiries, and reply to them instantly.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://YOUR-DOMAIN.co.za/">
+<meta property="og:image" content="https://YOUR-DOMAIN.co.za/preview.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23910029'/><text x='32' y='45' font-size='38' font-family='Arial' font-weight='700' fill='white' text-anchor='middle'>F</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+
+<!-- META PIXEL: paste the Pixel code from Meta Events Manager here before running ads -->
+
+<style>
+:root{
+  --alice:#ECF4F7; --charcoal:#393F4B; --burgundy:#910029; --burgdark:#700020;
+  --bg:#ECF4F7; --text:#393F4B; --surface:#ffffff; --muted:#5f6873; --line:#d7e1e6; --soft:#f8e5eb;
+  --hero:#393F4B; --chat:#e7eef1; --bubble-out:#f8e5eb;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15181e; --text:#e9edf1; --surface:#1f242c; --muted:#a3acb6; --line:#2e3540; --soft:#3a1a24;
+    --hero:#252a33; --chat:#181c22; --bubble-out:#4a1d2b;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15181e; --text:#e9edf1; --surface:#1f242c; --muted:#a3acb6; --line:#2e3540; --soft:#3a1a24;
+  --hero:#252a33; --chat:#181c22; --bubble-out:#4a1d2b;
+}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.55}
+a{color:inherit}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--burgundy);outline-offset:2px}
+img{max-width:100%}
+
+/* Header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.bar{max-width:1080px;margin:auto;height:68px;padding:0 16px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand b{width:38px;height:38px;border-radius:12px;background:var(--burgundy);color:#fff;display:grid;place-items:center;font-size:20px}
+.brand strong{display:block;font-size:16px;line-height:1.1}
+.brand small{display:block;color:var(--muted);font-size:12px}
+.desk-nav{display:flex;gap:4px}
+.desk-nav a{text-decoration:none;font-weight:600;font-size:15px;padding:8px 12px;border-radius:10px}
+.desk-nav a:hover{background:var(--surface);color:var(--burgundy)}
+.btn{display:inline-block;border:0;border-radius:13px;padding:12px 18px;font-weight:800;text-decoration:none;font-size:15px}
+.primary{background:var(--burgundy);color:#fff}
+.primary:hover{background:var(--burgdark)}
+.light{background:var(--alice);color:#393F4B}
+.outline{background:var(--surface);color:var(--text);border:1px solid var(--line)}
+
+main{max-width:1080px;margin:auto;padding:22px 16px 40px}
+section{margin-top:56px}
+section:first-child{margin-top:0}
+h1{font-size:clamp(34px,7vw,58px);line-height:1.05;letter-spacing:-.02em;margin:0 0 14px}
+h2{font-size:clamp(26px,4vw,34px);line-height:1.15;letter-spacing:-.01em;margin:0 0 8px}
+h3{margin:0 0 6px;font-size:18px}
+p{margin:0 0 12px}
+.sub{color:var(--muted);max-width:60ch;margin-bottom:22px}
+
+/* Hero */
+.hero{background:var(--hero);color:#fff;border-radius:28px;padding:40px 26px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;right:-80px;top:-80px;background:var(--burgundy)}
+.hero>*{position:relative;z-index:1}
+.hero p{color:#dfe4e8;max-width:46ch;font-size:18px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.hero-note{margin-top:22px;font-size:14px;color:#c4cbd2}
+
+/* Grids & cards */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:20px}
+.card p{color:var(--muted);font-size:15px}
+.card.feature{border:2px solid var(--burgundy)}
+.tag{display:inline-block;background:var(--soft);color:var(--burgundy);border-radius:99px;padding:4px 10px;font-size:12px;font-weight:800;margin-bottom:10px}
+:root[data-theme="dark"] .tag{color:#f2a5ba}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .tag{color:#f2a5ba}}
+
+/* Steps */
+.steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;counter-reset:s}
+.steps li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:20px}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--burgundy);color:#fff;font-weight:900;margin-bottom:12px}
+.steps p{color:var(--muted);font-size:15px;margin:0}
+
+/* Demo */
+.demo{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+.chatbox{background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;height:500px}
+.chat-head{background:var(--charcoal);color:#fff;padding:12px 16px;display:flex;align-items:center;gap:10px}
+.chat-head .av{width:34px;height:34px;border-radius:50%;background:var(--burgundy);display:grid;place-items:center;font-weight:900}
+.chat-head small{display:block;color:#c9d0d6;font-size:12px}
+.chat-head button{margin-left:auto;background:transparent;border:1px solid #ffffff55;color:#fff;border-radius:8px;padding:5px 10px;font-size:13px}
+.msgs{flex:1;overflow-y:auto;background:var(--chat);padding:14px 12px;display:flex;flex-direction:column;gap:8px}
+.msg{max-width:84%;padding:9px 12px;border-radius:12px;font-size:15px;line-height:1.4;background:var(--surface);align-self:flex-start;border-top-left-radius:4px}
+.msg.out{background:var(--bubble-out);align-self:flex-end;border-top-left-radius:12px;border-top-right-radius:4px}
+.msg small{display:block;font-size:11px;color:var(--muted);margin-top:3px}
+.typing{align-self:flex-start;background:var(--surface);border-radius:12px;padding:10px 14px;display:flex;gap:4px}
+.typing i{width:7px;height:7px;border-radius:50%;background:var(--muted);animation:blink 1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes blink{0%,100%{opacity:.25}50%{opacity:1}}
+.choices{display:flex;flex-wrap:wrap;gap:6px;padding:8px 12px;background:var(--chat)}
+.choices:empty{display:none}
+.choices button{background:var(--surface);color:var(--text);border:1px solid var(--line);border-radius:18px;padding:7px 12px;font-size:14px}
+.composer{display:flex;gap:8px;padding:10px;border-top:1px solid var(--line);background:var(--surface)}
+.composer[hidden]{display:none}
+.composer input{flex:1;min-width:0;border:1px solid var(--line);border-radius:20px;padding:9px 14px;background:var(--bg);color:var(--text)}
+.composer button{background:var(--burgundy);color:#fff;border:0;border-radius:20px;padding:0 16px;font-weight:800}
+.chat-err{color:#c0392b;font-size:13px;padding:0 14px 6px;background:var(--surface)}
+.chat-err:empty{display:none}
+.lead{background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.lead-top{background:var(--burgundy);color:#fff;padding:13px 18px;display:flex;gap:10px;align-items:center}
+.lead-top span{margin-left:auto;background:#ffffff26;border-radius:99px;padding:3px 10px;font-size:13px;font-weight:800}
+.lead-top span.hot{background:#fff;color:var(--burgundy)}
+.lead dl{margin:0;padding:4px 18px}
+.lead dl div{display:grid;grid-template-columns:100px 1fr;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}
+.lead dl div:last-child{border:0}
+.lead dt{color:var(--muted);font-size:14px}
+.lead dd{margin:0;font-weight:600}
+.lead .empty{padding:34px 20px;text-align:center;color:var(--muted)}
+.lead .empty strong{display:block;color:var(--text);margin-bottom:4px}
+.demo-note{font-size:14px;color:var(--muted);margin-top:12px}
+
+/* Pricing */
+.price{font-size:30px;font-weight:900;margin:6px 0 4px}
+.card ul{list-style:none;padding:0;margin:12px 0 18px}
+.card li{padding:7px 0;border-bottom:1px solid var(--line);font-size:15px}
+.card li::before{content:"✓";color:var(--burgundy);font-weight:900;margin-right:8px}
+.pricing .card{display:flex;flex-direction:column}
+.pricing .card .btn{margin-top:auto;text-align:center}
+
+/* Work */
+.thumb{background:var(--charcoal);color:#fff;border-radius:14px;padding:34px 16px;font-weight:900;letter-spacing:.04em;margin-bottom:14px;position:relative;overflow:hidden}
+.thumb.red{background:#B0101E}
+
+/* Form */
+.form-wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:24px;align-items:start}
+.field{margin:0 0 12px}
+.field label{display:block;font-size:14px;font-weight:700;margin-bottom:5px}
+.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);border-radius:13px;background:var(--surface);color:var(--text);padding:12px}
+.field textarea{min-height:110px;resize:vertical}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.notice{background:var(--surface);border-left:4px solid var(--burgundy);border-radius:12px;padding:13px 14px;margin-top:14px;font-size:15px}
+.notice[hidden]{display:none}
+.contact-list{list-style:none;padding:0;margin:0 0 16px}
+.contact-list li{padding:8px 0;border-bottom:1px solid var(--line)}
+
+footer{text-align:center;color:var(--muted);font-size:14px;padding:30px 16px 100px}
+
+/* Mobile bottom nav */
+.bottom{display:none}
+@media (max-width:900px){
+  .desk-nav,.top .cta{display:none}
+  .grid,.steps{grid-template-columns:1fr 1fr}
+  .demo,.form-wrap{grid-template-columns:1fr}
+  .bottom{display:grid;position:fixed;z-index:30;left:0;right:0;bottom:0;grid-template-columns:repeat(5,1fr);
+    background:color-mix(in srgb,var(--surface) 96%,transparent);border-top:1px solid var(--line);
+    padding:6px 6px calc(6px + env(safe-area-inset-bottom,0px))}
+  .bottom a{text-align:center;text-decoration:none;color:var(--muted);font-weight:700;font-size:12px;padding:6px 0;border-radius:12px}
+  .bottom a span{display:block;font-size:19px;line-height:1.2}
+  .bottom a.quote{color:var(--burgundy)}
+}
+@media (max-width:600px){
+  .grid,.steps,.row{grid-template-columns:1fr}
+  .hero{padding:32px 22px}
+  .chatbox{height:470px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="bar">
+    <a class="brand" href="#home"><b>F</b><span><strong>Fortune</strong><small>Web Solutions</small></span></a>
+    <nav class="desk-nav" aria-label="Main">
+      <a href="#services">Services</a><a href="#demo">Demo</a><a href="#pricing">Pricing</a><a href="#work">Work</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="btn primary cta" href="#quote">Get a quote</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <h1>Websites that bring in enquiries, and reply to them instantly.</h1>
+    <p>We build professional websites for South African service businesses, then add an assistant that answers every new customer in seconds, day or night.</p>
+    <div class="actions">
+      <a class="btn primary" href="#quote">Request a quote</a>
+      <a class="btn light" href="#demo">Try the live demo</a>
+    </div>
+    <p class="hero-note">Websites from R3,500. Built for plumbers, electricians, salons and other local businesses.</p>
+  </section>
+
+  <section id="services">
+    <h2>What we do</h2>
+    <p class="sub">Everything a small business needs to look professional online and stop losing customers to slow replies.</p>
+    <div class="grid">
+      <article class="card feature"><span class="tag">New</span><h3>Instant lead replies</h3><p>An AI assistant that replies to website and WhatsApp enquiries in seconds, collects the job details and sends you a summary.</p></article>
+      <article class="card"><h3>Website design</h3><p>Fast, mobile-friendly websites built around your business and what your customers need to know.</p></article>
+      <article class="card"><h3>Landing pages</h3><p>Single pages built for ads, designed to turn visitors into enquiries.</p></article>
+      <article class="card"><h3>Ad creative</h3><p>Social media and advertising artwork that matches your brand.</p></article>
+      <article class="card"><h3>Website refresh</h3><p>Bring an outdated website up to date with a cleaner design and working enquiry forms.</p></article>
+      <article class="card"><h3>Setup and support</h3><p>Domain, hosting and business email set up for you, plus updates after launch.</p></article>
+    </div>
+  </section>
+
+  <section id="how">
+    <h2>How the lead assistant works</h2>
+    <p class="sub">Most customers contact the first business that replies. This makes sure that's you.</p>
+    <ol class="steps">
+      <li><h3>A customer messages you</h3><p>From your website, a Facebook ad or WhatsApp, at any time.</p></li>
+      <li><h3>The assistant replies in seconds</h3><p>It asks what they need, how urgent it is, where they are and how to reach them.</p></li>
+      <li><h3>You get a ready-to-call lead</h3><p>A short summary lands on your phone, with urgent jobs flagged first.</p></li>
+    </ol>
+  </section>
+
+  <section id="demo">
+    <h2>Try it yourself</h2>
+    <p class="sub">This example is set up for a plumber. Answer as if you were a customer and watch the lead appear.</p>
+    <div class="demo">
+      <div class="chatbox">
+        <div class="chat-head"><div class="av" aria-hidden="true">R</div><div><strong>Redline Plumbing</strong><small>Example business</small></div><button type="button" id="restart">Start over</button></div>
+        <div class="msgs" id="msgs" aria-live="polite"></div>
+        <div class="choices" id="choices"></div>
+        <div class="chat-err" id="chatErr" role="alert"></div>
+        <form class="composer" id="composer" hidden><input id="chatInput" autocomplete="off" aria-label="Your reply"><button type="submit">Send</button></form>
+      </div>
+      <div>
+        <div class="lead" id="lead"><div class="empty"><strong>No lead yet</strong>Finish the chat to see what the business owner receives.</div></div>
+        <p class="demo-note">Demo only. Nothing typed here is sent anywhere.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <h2>Clear starting prices</h2>
+    <p class="sub">Final pricing depends on what you need. Every website includes a working enquiry form that sends straight to you.</p>
+    <div class="grid">
+      <article class="card"><h3>Starter Website</h3><div class="price">R3,500</div><ul><li>Up to 5 pages</li><li>Mobile friendly</li><li>Enquiry form to WhatsApp or email</li><li>Basic SEO</li></ul><a class="btn outline" href="#quote" data-service="Starter Website">Enquire</a></article>
+      <article class="card feature"><span class="tag">Most popular</span><h3>Business Website</h3><div class="price">R6,500</div><ul><li>Up to 10 pages</li><li>Custom design</li><li>Enquiry forms</li><li>SEO-ready structure</li><li>Launch support</li></ul><a class="btn primary" href="#quote" data-service="Business Website">Enquire</a></article>
+      <article class="card"><h3>Growth Website</h3><div class="price">R9,500</div><ul><li>Custom multi-page site</li><li>Sections built to convert</li><li>Advanced forms</li><li>30-day support</li></ul><a class="btn outline" href="#quote" data-service="Growth Website">Enquire</a></article>
+      <article class="card"><h3>Instant lead replies</h3><div class="price">Quote</div><ul><li>Website and WhatsApp replies</li><li>Collects job details</li><li>Lead summary to your phone</li><li>Urgent jobs flagged</li></ul><a class="btn outline" href="#quote" data-service="Instant lead replies">Enquire</a></article>
+      <article class="card"><h3>Ad Creative</h3><div class="price">From R450</div><ul><li>Social media adverts</li><li>Campaign artwork</li><li>Multiple formats</li><li>Matches your brand</li></ul><a class="btn outline" href="#quote" data-service="Ad creative">Enquire</a></article>
+    </div>
+  </section>
+
+  <section id="work">
+    <h2>Our work</h2>
+    <p class="sub">Recent projects and concepts.</p>
+    <div class="grid">
+      <article class="card"><div class="thumb">ECONOBEE</div><h3>EconoBEE</h3><p>Corporate compliance and B-BBEE website.</p><a class="btn outline" href="https://econoservices.com" target="_blank" rel="noopener">Visit project</a></article>
+      <article class="card"><div class="thumb red">REDLINE PLUMBING</div><h3>Redline Plumbing <span class="tag">Concept</span></h3><p>A plumber website with an instant lead assistant. Try it in the demo above.</p><a class="btn outline" href="#demo">See the demo</a></article>
+      <article class="card"><h3>Your business here</h3><p>We're taking on new projects now.</p><a class="btn primary" href="#quote">Start a project</a></article>
+    </div>
+  </section>
+
+  <section id="quote">
+    <div class="form-wrap">
+      <div>
+        <h2>Request a quote</h2>
+        <p class="sub">Tell us what you need. We'll reply on WhatsApp, usually the same day.</p>
+        <ul class="contact-list" id="contact">
+          <li><strong>WhatsApp:</strong> <a id="waLink" href="#quote">Message us</a></li>
+          <li><strong>Email:</strong> <a id="emailLink" href="#quote"></a></li>
+          <li><strong>Area:</strong> Johannesburg and online across South Africa</li>
+        </ul>
+      </div>
+      <form id="qf" novalidate>
+        <div class="row">
+          <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="f-phone">WhatsApp or phone number</label><input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="082 123 4567"></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="f-biz">Business type</label><input id="f-biz" name="business" placeholder="e.g. Plumber, salon"></div>
+          <div class="field"><label for="f-email">Email (optional)</label><input id="f-email" name="email" type="email" autocomplete="email"></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="f-service">What do you need?</label>
+            <select id="f-service" name="service"><option>Starter Website</option><option>Business Website</option><option>Growth Website</option><option>Instant lead replies</option><option>Landing page</option><option>Ad creative</option><option>Website refresh</option><option>Not sure yet</option></select></div>
+          <div class="field"><label for="f-budget">Budget</label>
+            <select id="f-budget" name="budget"><option>Not sure yet</option><option>Under R3,500</option><option>R3,500 – R6,500</option><option>R6,500 – R10,000</option><option>R10,000+</option></select></div>
+        </div>
+        <div class="field"><label for="f-details">Project details</label><textarea id="f-details" name="details" placeholder="What does your business do, and what should the website help with?"></textarea></div>
+        <button class="btn primary" type="submit" id="qfBtn">Send quote request</button>
+        <div class="notice" id="qfMsg" role="status" hidden></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="yr"></span> Fortune Web Solutions. Johannesburg, South Africa.</footer>
+
+<nav class="bottom" aria-label="Quick links">
+  <a href="#home"><span>⌂</span>Home</a>
+  <a href="#services"><span>◇</span>Services</a>
+  <a href="#demo"><span>◎</span>Demo</a>
+  <a href="#pricing"><span>R</span>Pricing</a>
+  <a href="#quote" class="quote"><span>＋</span>Quote</a>
+</nav>
+
+<script>
+/* ===== SITE SETTINGS: fill these in before going live ===== */
+const CONFIG = {
+  whatsapp: "",   // WhatsApp number in international format, no + or spaces. Example: "27821234567"
+  formspree: "",  // Optional: Formspree form link for email copies. Example: "https://formspree.io/f/abcdwxyz"
+  email: "hello@fortunedigital.co.za" // Change to an inbox you have tested
+};
+/* ========================================================== */
+
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+// Contact links
+const waLink = document.getElementById('waLink');
+if (CONFIG.whatsapp) { waLink.href = `https://wa.me/${CONFIG.whatsapp}`; waLink.target = '_blank'; waLink.rel = 'noopener'; waLink.textContent = '+' + CONFIG.whatsapp; }
+const emailLink = document.getElementById('emailLink');
+emailLink.textContent = CONFIG.email; emailLink.href = 'mailto:' + CONFIG.email;
+
+// Pricing buttons pre-select the service
+document.querySelectorAll('[data-service]').forEach(b => b.addEventListener('click', () => {
+  const sel = document.getElementById('f-service');
+  [...sel.options].forEach(o => { if (o.text.toLowerCase() === b.dataset.service.toLowerCase()) sel.value = o.text; });
+}));
+
+// Quote form: sends to WhatsApp and/or Formspree. Never pretends to send if neither is set.
+const qf = document.getElementById('qf'), qfMsg = document.getElementById('qfMsg'), qfBtn = document.getElementById('qfBtn');
+function say(t){ qfMsg.textContent = t; qfMsg.hidden = false; }
+qf.addEventListener('submit', async e => {
+  e.preventDefault();
+  const d = Object.fromEntries(new FormData(qf));
+  if (!d.name.trim()) return say('Add your name so we know who to reply to.');
+  if (!/^(\+?27|0)[\s-]?\d{2}[\s-]?\d{3}[\s-]?\d{4}$/.test(d.phone.trim())) return say('Add a South African number, like 082 123 4567, so we can reply on WhatsApp.');
+  if (!CONFIG.whatsapp && !CONFIG.formspree) return say('Setup needed: this form is not connected yet. Add a WhatsApp number or Formspree link in the site settings before going live.');
+
+  const text = `New quote request\nName: ${d.name}\nPhone: ${d.phone}\nBusiness: ${d.business||'-'}\nEmail: ${d.email||'-'}\nService: ${d.service}\nBudget: ${d.budget}\nDetails: ${d.details||'-'}`;
+  qfBtn.disabled = true; qfBtn.textContent = 'Sending...';
+  let emailed = false;
+  if (CONFIG.formspree) {
+    try { const r = await fetch(CONFIG.formspree, { method:'POST', headers:{Accept:'application/json'}, body:new FormData(qf) }); emailed = r.ok; } catch(_) {}
+  }
+  if (CONFIG.whatsapp) {
+    window.open(`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(text)}`, '_blank');
+    say('WhatsApp should now be open with your request filled in. Tap send and we will reply soon.');
+  } else if (emailed) {
+    say('Thanks, your request has been sent. We will contact you soon.');
+  } else {
+    say('Your request could not be sent. Please email us at ' + CONFIG.email + '.');
+  }
+  if (typeof fbq === 'function') fbq('track', 'Lead');
+  qfBtn.disabled = false; qfBtn.textContent = 'Send quote request';
+  if (CONFIG.whatsapp || emailed) qf.reset();
+});
+
+// Demo chat
+(function(){
+  const msgs=document.getElementById('msgs'), choices=document.getElementById('choices'), composer=document.getElementById('composer'),
+        input=document.getElementById('chatInput'), err=document.getElementById('chatErr'), lead=document.getElementById('lead');
+  let data={}, step=0, lastUser=0;
+  const steps=[
+    {key:'problem', q:"Hi, you've reached Redline Plumbing. What do you need help with?", options:['Burst pipe or leak','Blocked drain','Geyser problem','New installation']},
+    {key:'urgency', q:"Thanks. How soon do you need someone?", options:['Emergency, right now','Today','This week','Just a quote']},
+    {key:'area', q:"Which suburb are you in?", ph:'e.g. Fourways'},
+    {key:'name', q:"And your name?", ph:'Your name'},
+    {key:'phone', q:d=>`Thanks ${d.name}. What's the best number to call you on?`, ph:'082 123 4567', tel:true,
+      check:v=>/^(\+?27|0)[\s-]?\d{2}[\s-]?\d{3}[\s-]?\d{4}$/.test(v)?'':'Enter a South African number, like 082 123 4567.'}
+  ];
+  const esc=s=>{const d=document.createElement('div');d.textContent=s;return d.innerHTML};
+  const clock=()=>new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});
+  function add(t,who,meta){const m=document.createElement('div');m.className='msg'+(who==='out'?' out':'');m.innerHTML=esc(t)+`<small>${meta?esc(meta)+' ':''}${clock()}</small>`;msgs.appendChild(m);msgs.scrollTop=msgs.scrollHeight}
+  function bot(t,then){
+    const ty=document.createElement('div');ty.className='typing';ty.innerHTML='<i></i><i></i><i></i>';msgs.appendChild(ty);msgs.scrollTop=msgs.scrollHeight;
+    setTimeout(()=>{ty.remove();add(t,'in',lastUser?`Replied in ${((performance.now()-lastUser)/1000).toFixed(1)}s`:'');then&&then()},500+Math.random()*500);
+  }
+  function ask(){
+    const s=steps[step];
+    bot(typeof s.q==='function'?s.q(data):s.q,()=>{
+      choices.innerHTML='';err.textContent='';
+      if(s.options){composer.hidden=true;s.options.forEach(o=>{const b=document.createElement('button');b.type='button';b.textContent=o;b.onclick=()=>answer(o);choices.appendChild(b)})}
+      else{composer.hidden=false;input.value='';input.placeholder=s.ph;input.type=s.tel?'tel':'text';input.focus({preventScroll:true})}
+    });
+  }
+  function answer(v){
+    v=v.trim();const s=steps[step];
+    if(!v){err.textContent='Type a reply to continue.';return}
+    if(s.check&&s.check(v)){err.textContent=s.check(v);return}
+    err.textContent='';choices.innerHTML='';composer.hidden=true;data[s.key]=v;add(v,'out');lastUser=performance.now();
+    step++; step<steps.length?ask():finish();
+  }
+  function finish(){
+    const hot=data.urgency==='Emergency, right now';
+    bot(hot?`Got it, ${data.name}. The plumber has been alerted and will call you within 10 minutes.`:`Thanks ${data.name}, you're all set. We'll call you ${data.urgency==='Today'?'within the hour':'today'} to arrange a time.`,()=>{
+      if(hot&&data.problem==='Burst pipe or leak') bot("While you wait, turn off your main water valve. It's usually near the water meter.",show); else show();
+    });
+  }
+  function show(){
+    const hot=data.urgency==='Emergency, right now';
+    lead.innerHTML=`<div class="lead-top"><strong>New lead</strong>${clock()}<span class="${hot?'hot':''}">${hot?'Urgent':'Normal'}</span></div>
+      <dl><div><dt>Customer</dt><dd>${esc(data.name)}</dd></div><div><dt>Phone</dt><dd>${esc(data.phone)}</dd></div>
+      <div><dt>Job</dt><dd>${esc(data.problem)}</dd></div><div><dt>When</dt><dd>${esc(data.urgency)}</dd></div>
+      <div><dt>Area</dt><dd>${esc(data.area)}</dd></div><div><dt>Source</dt><dd>Website chat</dd></div></dl>`;
+  }
+  composer.addEventListener('submit',e=>{e.preventDefault();answer(input.value)});
+  document.getElementById('restart').onclick=()=>{msgs.innerHTML='';choices.innerHTML='';composer.hidden=true;err.textContent='';data={};step=0;lastUser=0;
+    lead.innerHTML='<div class="empty"><strong>No lead yet</strong>Finish the chat to see what the business owner receives.</div>';ask()};
+  ask();
+})();
+</script>
+</body>
+</html>
